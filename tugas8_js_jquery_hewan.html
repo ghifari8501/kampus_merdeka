@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Tugas 8 JS jQueryt</title>
+        <script src="jquery.js"></script>
+        <script>
+            $("document").ready(function () {
+                $("div.kuda").mouseover(function () {
+                    $(this).css({
+                     background: "url(https://www.gambaranimasi.org/data/media/217/animasi-bergerak-kuda-0005.gif)"
+                     
+                    });
+                });
+                $("div.kuda").mouseout(function () {
+                    $(this).css({
+                        background: "red"
+                    });
+                });
+                $("div.kambing").mouseover(function () {
+                    $(this).css({
+                        background: "url(https://www.gambaranimasi.org/data/media/234/animasi-bergerak-kambing-0020.gif)"
+                    });
+                });
+                $("div.kambing").mouseout(function () {
+                    $(this).css({
+                        background: "red"
+                    });
+                });
+            $("div.babi").mouseover(function () {
+                    $(this).css({
+                        background: "url(https://www.gambaranimasi.org/data/media/293/animasi-bergerak-babi-0032.gif)"
+                    });
+                });
+                $("div.babi").mouseout(function () {
+                    $(this).css({
+                        background: "red"
+                    });
+                });
+                $("div.sapi").mouseover(function () {
+                    $(this).css({
+                        background: "url(https://www.gambaranimasi.org/data/media/211/animasi-bergerak-sapi-0106.gif)"
+                    });
+                });
+                $("div.sapi").mouseout(function () {
+                    $(this).css({
+                        background: "red"
+                    });
+                });
+            });
+        </script>
+        <style type="text/css">
+            div {
+                background: red;
+                width: 150px;
+                height: 150px;
+                float: left;
+                margin: 80px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <p align="center">Dekati Pada Setiap Kotak Untuk Menampilkan Hewan & Suaranya</p>
+        <audio hidden autoplay loop>
+            <source src="suara_hewan/efek suara kuda.mp3" type="audio/mpeg">
+            </audio>
+        <div class="kuda">Ini Hewan Kuda</div>
+        <div class="kambing">Ini Hewan Kambing</div>
+        <div class="babi">Ini Hewan Babi</div>
+        <div class="sapi">ini Hewan Sapi</div>
+    </body>
+
+</html>
